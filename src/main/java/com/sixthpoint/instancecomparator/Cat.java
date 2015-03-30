@@ -1,24 +1,26 @@
 package com.sixthpoint.instancecomparator;
 
+import java.util.Date;
+
 /**
  *
  * @author sixthpoint
  */
 public class Cat extends Animal {
 
-    public Cat(String name, String size) {
-        setSize(size);
+    private Date dob;
+
+    public Cat(String name, Date dob) {
+        setDob(dob);
         setName(name);
     }
 
-    @Override
-    public String getSize() {
-        return this.size;
+    public Date getDob() {
+        return this.dob;
     }
 
-    @Override
-    public void setSize(String size) {
-        this.size = size;
+    public void setDob(Date date) {
+        this.dob = date;
     }
 
     @Override

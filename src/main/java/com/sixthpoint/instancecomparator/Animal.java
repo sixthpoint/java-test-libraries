@@ -6,13 +6,10 @@ package com.sixthpoint.instancecomparator;
  */
 public abstract class Animal {
 
-    protected String size;
-
+    /**
+     * All animals must have a name
+     */
     protected String name;
-
-    public abstract String getSize();
-
-    public abstract void setSize(String size);
 
     public abstract String getName();
 
